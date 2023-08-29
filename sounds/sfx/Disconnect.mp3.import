@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Disconnect.mp3-c4d387538647619b8c707fc91c46746e.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/Disconnect.mp3"
+dest_files=[ "res://.import/Disconnect.mp3-c4d387538647619b8c707fc91c46746e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

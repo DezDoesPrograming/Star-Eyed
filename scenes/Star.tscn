@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://art/star/costume1 (2).svg" type="Texture" id=1]
+[ext_resource path="res://scripts/Star.gd" type="Script" id=2]
+[ext_resource path="res://sounds/sfx/Collect.mp3" type="AudioStream" id=3]
+[ext_resource path="res://sounds/sfx/Connect.mp3" type="AudioStream" id=4]
+[ext_resource path="res://sounds/sfx/Win.mp3" type="AudioStream" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 19, 20 )
+
+[node name="Star" type="Area2D"]
+position = Vector2( 240, 26 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="Collect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Heal" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Win" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="area_entered" from="." to="." method="_on_Star_area_entered"]

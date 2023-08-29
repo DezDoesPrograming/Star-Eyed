@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Connect.mp3-ba6a006933de7b081c85b9348c862729.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/Connect.mp3"
+dest_files=[ "res://.import/Connect.mp3-ba6a006933de7b081c85b9348c862729.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
